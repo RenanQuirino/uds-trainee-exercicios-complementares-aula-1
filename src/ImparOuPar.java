@@ -7,10 +7,11 @@ public class ImparOuPar {
         System.out.println("digite um número:");
         int numero = scanner.nextInt();
 
-        if (numero >= 0) {
-            System.out.println("Número Impar");
+        if (numero%2 == 0 ) {
+            System.out.println("Par");
         }
-        else
-            System.out.println("Número Par");
+        if (numero%2 == 1) {
+            System.out.println("Impar");
+        }
     }
 }
