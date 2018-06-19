@@ -1,21 +1,15 @@
 import java.util.Scanner;
 
 public class Inteiro {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Digite um número:");
+            Double numero = scanner.nextDouble();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("digite um número:");
-        int numero = scanner.nextInt();
-
-        if (numero >= 0) {
-            System.out.println("Inteiro");
-        }
-        if (numero <= 0) {
-            System.out.printf("Inteiro");
-        }
-        
-
+            if (numero % 1 == 0) {
+                System.out.println("Número inteiro");
+            } else {
+                System.out.println("Número não é inteiro");
+            }
         }
     }
-}
-
